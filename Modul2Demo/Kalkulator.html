@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: rgb(251, 186, 66);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(142, 101, 101, 0.2);
+            width: 300px;
+        }
+
+        .calculator-screen {
+            width: 100%;
+            height: 60px;
+            background-color: #2f2e2e;
+            color: white;
+            text-align: right;
+            padding: 10px;
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .calculator-keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        button {
+            height: 60px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        button.operation {
+            background-color: #f57c00;
+            color: white;
+        }
+
+        button.clear {
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        button:active {
+            background-color: #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <!-- Layar Kalkulator -->
+        <input type="text" class="calculator-screen" id="screen" value="" disabled>
+
+        <!-- Tombol Kalkulator -->
+        <div class="calculator-keys">
+            <button class="clear" onclick="clearScreen()">AC</button>
+            <button onclick="input('%')">%</button>
+            <button onclick="input('**')">^</button>
+            <button class="operation" onclick="input('/')">/</button>
+
+            <button onclick="input('7')">7</button>
+            <button onclick="input('8')">8</button>
+            <button onclick="input('9')">9</button>
+            <button class="operation" onclick="input('*')">*</button>
+
+            <button onclick="input('4')">4</button>
+            <button onclick="input('5')">5</button>
+            <button onclick="input('6')">6</button>
+            <button class="operation" onclick="input('-')">-</button>
+
+            <button onclick="input('1')">1</button>
+            <button onclick="input('2')">2</button>
+            <button onclick="input('3')">3</button>
+            <button class="operation" onclick="input('+')">+</button>
+
+            <button onclick="input('0')">0</button>
+            <button onclick="input('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan input pada layar
+        function input(value) {
+            document.getElementById('screen').value += value;
+        }
+
+        // Fungsi untuk menghitung hasil dari operasi
+        function calculate() {
+            try {
+                var result = eval(document.getElementById('screen').value);
+                document.getElementById('screen').value = result;
+            } catch (err) {
+                document.getElementById('screen').value = "Error";
+            }
+        }
+
+        // Fungsi untuk menghapus layar (Clear All)
+        function clearScreen() {
+            document.getElementById('screen').value = '';
+        }
+    </script>
+
+</body>
+</html>

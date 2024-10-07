@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Form Pendaftaran</h2>
+
+        <form id="myForm" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Nama Lengkap">
+            <input type="email" id="email" placeholder="Email">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // Fungsi untuk validasi form
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+
+            if (name === "") {
+                alert("Nama tidak boleh kosong!");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Email tidak boleh kosong!");
+                return false;
+
+            }
+
+            alert("Form berhasil dikirim!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form-container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+</style>

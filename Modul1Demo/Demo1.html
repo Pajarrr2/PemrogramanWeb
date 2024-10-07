@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Design</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="file:///C:/Users/fajar/OneDrive/Pictures/Spotify-Icon-White-Dark-Background-Logo.wine.svg" alt="Spotify Logo" width="40" height="40">
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Telusuri" aria-label="Search">
+                <a href="#" class="btn btn-outline-success" type="submit"><img src="file:///C:/Users/fajar/OneDrive/Pictures/download.jpeg" alt="Home" width="25"></a>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Sponsor Banner -->
+    <div class="container-fluid sponsor-banner">
+        <a class="container-brand" href="#">
+        <img src="file:///C:/Users/fajar/OneDrive/Pictures/sponsorship.jpg" alt="Sponsor Banner" width="1500" height="397"></a>
+    </div>
+
+    <!-- Categories -->
+    <div class="container text-center my-4">
+        <div class="btn-group" role="group">
+            <a href="#" class="btn custom-btn">All</a>
+            <a href="#" class="btn custom-btn">Music</a>
+            <a href="#" class="btn custom-btn">Podcast</a>
+        </div>
+    </div>
+
+    <!-- Music Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-3">
+                    <img src="file:///C:/Users/fajar/OneDrive/Pictures/artworks-63ZQcly3vzCPIgGK-OwQicg-t500x500.jpg" class="card-img-top" alt="Sering Diputar">
+                    <div class="card-body">
+                        <a href="#" class="card-title">Sering Diputar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-3">
+                    <img src="file:///C:/Users/fajar/OneDrive/Pictures/5ou8yCcBGe.jpg" class="card-img-top" alt="Tulus">
+                    <div class="card-body">
+                        <a href="#" class="card-title">Tulus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-3">
+                    <img src="file:///C:/Users/fajar/OneDrive/Pictures/049698900_1617887127-Opick.webp" class="card-img-top" alt="Religi">
+                    <div class="card-body">
+                        <a href="" class="card-title">Religi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-3">
+                    <img src="file:///C:/Users/fajar/OneDrive/Pictures/Sampul_album_Tiara_Andini.png" class="card-img-top" alt="Tiara Andini">
+                    <div class="card-body">
+                        <a href="#" class="card-title">Tiara Andini</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="file:///C:/Users/fajar/OneDrive/Pictures/download%20(1).png" width="100" alt="Spotify Logo">
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex justify-content-around">
+                        <div>
+                            <a href="#">About</a>
+                            <br>
+                            <a href="#">Jobs</a>
+                        </div>
+                        <div>
+                            <a href="#">Developers</a>
+                            <br>
+                            <a href="#">For Artist</a>
+                        </div>
+                        <div>
+                            <a href="#">Help</a>
+                            <br>
+                            <a href="#">Web Player</a>
+                        </div>
+                        <div>
+                            <a href="#">Free Mobile App</a>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#"><img src="file:///C:/Users/fajar/OneDrive/Pictures/logo-6060989_960_720.webp" alt="Instagram" width="30"></a>
+                            <a href="#" class="ms-3"><img src="file:///C:/Users/fajar/OneDrive/Pictures/images.png" alt="Facebook" width="30"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<style>
+
+    .custom-btn {
+        background-color: #1DB954;
+        color: white;
+        border: none;
+        padding: 10px 20px; /* memberikan spasi */
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-btn:hover {
+        background-color: #1AA34A;
+        color: white;
+        border: none;
+    }
+
+    .card-title {
+        text-decoration: none;
+    }
+
+    /* Card Styling */
+    .card {
+        background-color: #333;
+        color: white;
+    }
+
+    /* Footer Styling */
+    .footer {
+        text-align: center;
+        background-color: #282828;
+        padding: 20px 0; /* Padding di atas dan bawah */
+    }
+
+    .footer a {
+        color: #ffffff; 
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        color:aqua; /* Warna saat hover */
+    }
+    
+</style>

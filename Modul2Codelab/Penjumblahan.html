@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan dengan JavaScript</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Penjumlahan</h1>
+        <label for="number1">Bilangan pertama</label>
+        <input type="number" id="number1" placeholder="Masukkan angka pertama">
+
+        <label for="number2">Bilangan kedua</label>
+        <input type="number" id="number2" placeholder="Masukkan angka kedua">
+
+        <div>
+            <button onclick="calculateSum()">Jumlahkan</button>
+            <button class="reset" onclick="resetForm()">Reset</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Fungsi untuk menghitung penjumlahan
+        function calculateSum() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+
+            // Validasi jika input kosong atau bukan angka
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').innerHTML = "Silakan masukkan kedua angka!";
+            } else {
+                var sum = num1 + num2;
+                document.getElementById('result').innerHTML = "Hasil: " + sum;
+            }
+        }
+
+        // Fungsi untuk mereset input dan hasil
+        function resetForm() {
+            document.getElementById('number1').value = '';
+            document.getElementById('number2').value = '';
+            document.getElementById('result').innerHTML = '';
+        }
+    </script>
+
+</body>
+</html>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            font-weight: bold;
+            background-color:cyan;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #ffffff1a;
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input {
+
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: orange;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: orange;
+        }
+
+        button.reset {
+            background-color: orange;
+        }
+
+        button.reset:hover {
+            background-color: orange;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>

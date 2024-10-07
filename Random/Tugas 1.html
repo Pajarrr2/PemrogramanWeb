@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated Laboratory System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Header */
+        .navbar {
+            background-color: #5b5959;
+            
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link:hover {
+            color:aqua;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-image: url('file:///C:/YouTube/52e133815298286e464ecead0870c0c1401.jpg'); /* Ganti URL dengan gambar asli */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            text-align: left;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* Our Information Section */
+        .info-section {
+            padding: 40px 0;
+            text-align: center;
+            font-weight: bold;
+            background-color: #ffffff;
+        }
+        .info-section h2 {
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: rgb(0, 0, 0);
+        }
+        .info-box img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0e0e0e;
+            color: white;
+            padding: 40px 0;
+            align-items: center;
+        }
+        .footer .footer-logo img {
+            height: 80px;
+        }
+        .footer .footer-section h5 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer .social-icons {
+            width: 45px;
+            margin-right: 15px;
+            
+        }
+        
+        .footer .footer-contact p {
+            margin-bottom: 5px;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 50px 0;
+            border-top: 2px solid #444;
+            background-color: #ffffff;
+        }
+        .col-md-3{
+            background-color: #ebebeb;
+        }
+    .col-md-6{
+        background-color: #ebebeb;
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="file:///C:/YouTube/ilab_dark.e371d3da.svg" alt="Logo"> <!-- Ganti URL dengan logo asli -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Certification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">More</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to</h1>
+            <h1>Integrated Laboratory System</h1>
+        </div>
+    </section>
+
+    <!-- Our Information Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Our Information</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="info-box">
+                        <img src="file:///C:/YouTube/image_%20(5).webp" alt="Icon 1">
+                        <p>Contoh</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="info-box">
+                        <img src="file:///C:/YouTube/image_%20(4).webp" alt="Icon 2">
+                        <p>Contoh</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="info-box">
+                        <img src="file:///C:/YouTube/image_%20(1).webp" alt="Icon 3">
+                        <p>Contoh</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="info-box">
+                        <img src="file:///C:/YouTube/image_%20(2).webp" alt="Icon 4">
+                        <p>Contoh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-light py-3"></footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="file:///C:/YouTube/ilab_dark.e371d3da.svg" alt="Image" height="110" width="110" >
+                    <p>i-Lab adalah sistem terintegrasi yang mendukung kegiatan praktikum di Departemen Informatika Universitas Muhammadiyah Malang, baik untuk praktisi, dosen, maupun asisten.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Jl. Raya Tlogomas No.246</li>
+                        <li>Jawa Timur 65144, Indonesia</li>
+                        <li>081473235982378</li>
+                        <li><a href="mailto:lab@gmail.com">lab@gmail.com</a></li>
+                        <li><a href="mailto:lab@webmail.umm.ac.id">lab@webmail.umm.ac.id</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024. All rights reserved <br> made by UMM Infotech Information System Division</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
