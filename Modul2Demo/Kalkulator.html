@@ -8,10 +8,8 @@
 <body>
 
     <div class="calculator">
-        <!-- Layar Kalkulator -->
         <input type="text" class="calculator-screen" id="screen" value="" disabled>
 
-        <!-- Tombol Kalkulator -->
         <div class="calculator-keys">
             <button class="clear" onclick="clearScreen()">AC</button>
             <button onclick="input('%')">%</button>
@@ -40,12 +38,10 @@
     </div>
 
     <script>
-        // Fungsi untuk menampilkan input pada layar
         function input(value) {
             document.getElementById('screen').value += value;
         }
 
-        // Fungsi untuk menghitung hasil dari operasi
         function calculate() {
             try {
                 var result = eval(document.getElementById('screen').value);
@@ -55,7 +51,6 @@
             }
         }
 
-        // Fungsi untuk menghapus layar (Clear All)
         function clearScreen() {
             document.getElementById('screen').value = '';
         }
