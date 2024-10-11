@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validation</title>
+    <title>Form Size Label</title>
 </head>
 <body>
 
@@ -11,8 +11,12 @@
         <h2>Form Pendaftaran</h2>
 
         <form id="myForm" onsubmit="return validateForm()">
+            <label for="number1" class="label-large">Nama Lengkap</label>
             <input type="text" id="name" placeholder="Nama Lengkap">
+            <label for="number2" class="label-medium">Email</label>
             <input type="email" id="email" placeholder="Email">
+            <label for="number3" class="label-small">Alamat Lengkap</label>
+            <input type="text" id="address" placeholder="Alamat Lengkap">
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -22,6 +26,7 @@
         function validateForm() {
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
 
             if (name === "") {
                 alert("Nama tidak boleh kosong!");
@@ -31,7 +36,11 @@
             if (email === "") {
                 alert("Email tidak boleh kosong!");
                 return false;
+            }
 
+            if (address === "") {
+                alert("Alamat tidak boleh kosong!");
+                return false;
             }
 
             alert("Form berhasil dikirim!");
@@ -41,6 +50,7 @@
 
 </body>
 </html>
+
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -71,6 +81,25 @@
         margin: 10px 0;
         border: 1px solid #ccc;
         border-radius: 5px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .label-large {
+        font-size: 13px;
+    }
+
+    .label-medium {
+        font-size: 13px;
+    }
+
+    .label-small {
+        font-size: 13px;
     }
 
     button {
